@@ -1,5 +1,5 @@
-import Tests from './Tests/Tests.js'
 import Canvas from './Library/Canvas.js'
+import Tests from './Tests/Tests.js'
 
 /** Class for the application. */
 export default class Application {
@@ -11,7 +11,7 @@ export default class Application {
         if (tests) {
             new Tests()
         }
-        console.info('WebGL2 Yannick Mallefroy')
+        console.info('WebGL2 Demo')
 
         this.shaderSources = {
             fragment: null,

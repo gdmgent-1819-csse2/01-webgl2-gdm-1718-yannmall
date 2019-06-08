@@ -1,4 +1,4 @@
-import Vector2 from './Math/Vector/Vector2.js'
+import Vector2 from './Math/Vector2.js'
 
 /** Class representing a canvas element for WebGL2 */
 export default class Canvas {

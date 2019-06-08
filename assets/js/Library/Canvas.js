@@ -19,6 +19,7 @@ export default class Canvas {
             orange: [255, 165, 0, 0],
             bordeaux: [95, 2, 31, 0],
         }
+
         this.data = {
             colors: [],
             positions: [],
@@ -50,7 +51,7 @@ export default class Canvas {
         this.data.positions.push(v.x, v.y)
         this.data.colors.push(...this.colors.red)
 
-        for(let i = 0; i < 12; i++){
+        for (let i = 0; i < 12; i++) {
             v.rot(30)
             this.data.positions.push(v.x, v.y)
             this.data.colors.push(...this.colors["yellow"])
@@ -63,7 +64,7 @@ export default class Canvas {
             hours = 30 * ((dateTime.getHours() % 12) + dateTime.getMinutes() / 60)
             minutes = 6 * dateTime.getMinutes()
             seconds = 6 * dateTime.getSeconds()
-    
+
             console.log(hours, minutes, seconds)
 
             //hour hand
@@ -82,7 +83,7 @@ export default class Canvas {
             hourHand3.rot(-hours)
             this.data.positions.push(hourHand3.x, hourHand3.y)
             this.data.colors.push(r1, g1, b1, 0)
-    
+
             //minute hand
             const minuteHand1 = new Vector2(0, 0.4)
             const minuteHand2 = new Vector2(0, 0.3)
@@ -103,7 +104,7 @@ export default class Canvas {
             minuteHand4.rot(-minutes)
             this.data.positions.push(minuteHand4.x, minuteHand4.y)
             this.data.colors.push(r2, g2, b2, 0)
-    
+
             //second hand
             let secondHand1 = new Vector2(0, 0.5)
             let secondHand2 = new Vector2(0, 0.4)
